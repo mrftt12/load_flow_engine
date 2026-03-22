@@ -1,6 +1,6 @@
-# lfe-python
+# Load Flow Engine
 
-`lfe-python` is a three-phase unbalanced load flow engine written in Python. The project mirrors 
+`load_flow_engine` is a three-phase unbalanced load flow engine written in Python. The project mirrors 
 typical power system data structures and workflow while exposing a small, scriptable API for building 
 distribution networks, assembling the admittance matrix, solving load flow, and exporting results.
 

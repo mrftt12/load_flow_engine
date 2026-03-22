@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "load-flow-engine"
+version = "0.1.0"
+description = "Three-phase unbalanced load flow solver"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+]
+notebooks = [
+    "jupyter",
+]
+
+[project.scripts]
+lfe-example = "load_flow_engine.example:run_example"
+
+[tool.setuptools.packages.find]
+include = ["load_flow_engine*"]
